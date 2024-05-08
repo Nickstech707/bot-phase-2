@@ -1,13 +1,139 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bot-army {
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: 420px;
+  width: auto;
+  background-color: #ace60d;
+}
+.bot.lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.specs-comtainer {
+  overflow: hidden;
+}
+.specs-img {
+  float: left;
+  border-radius: 50%;
+  background-color: rgb(223, 233, 229);
+}
+.specs-grid {
+  margin-left: 20px;
+  float: left;
+  justify-content: center;
+}
+
+.specs-grid p {
+  font-weight: 600;
+}
+
+.your-bot-army {
+  background-color: #f8f8f8;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  margin-right: 5px;
+}
+
+.fas.fa-heartbeat {
+  color: red;
+}
+
+.fas.fa-bolt {
+  color: orange;
+}
+
+.fas.fa-shield-alt {
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+  background-color: #ace60d;
+}
+
+.bot-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.bot-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bot-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 300px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.bot-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.bot-item p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.bot-class {
+  color: #090809;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn {
+  background-color: #ff031c;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.btn:hover {
+  background-color: #b20b1b;
+}
+.content {
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+span {
+  margin-right: 15px;
+}
+.name {
+  font-weight: 900;
+  font-size: 25px;
 }
