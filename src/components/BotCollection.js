@@ -9,7 +9,7 @@ function BotCollection({ addToArmy, handleDischarge }) {
 
   // Fetch bots from the server on component mount
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("http://localhost:3001/bots")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch bots");

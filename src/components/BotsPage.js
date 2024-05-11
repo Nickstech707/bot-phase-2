@@ -18,7 +18,7 @@ function BotsPage() {
 
   // Function to discharge a bot from the army and send a DELETE request to the backend
   const handleDischarge = (bot) => {
-    fetch(`http://localhost:3000/bots/${bot.id}`, {
+    fetch(`http://localhost:3001/bots/${bot.id}`, {
       method: "DELETE",
     })
       .then((response) => {
